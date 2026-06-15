@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vertexcollab-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vertexcollab-backend
+  template:
+    metadata:
+      labels:
+        app: vertexcollab-backend
+    spec:
+      containers:
+        - name: backend
+          image: vertexcollab-backend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - configMapRef:
+                name: vertexcollab-config
+            - secretRef:
+                name: vertexcollab-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: vertexcollab-backend
+  ports:
+    - port: 5000
+      targetPort: 5000
+      nodePort: 30081
+  type: NodePort
