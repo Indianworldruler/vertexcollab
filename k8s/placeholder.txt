@@ -1,0 +1,7 @@
+Kubernetes manifests will be added in a future phase.
+
+Planned resources:
+- Deployment manifests for backend, frontend, and MongoDB
+- Service and Ingress definitions
+- ConfigMaps and Secrets
+- HorizontalPodAutoscaler configs
