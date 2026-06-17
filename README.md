@@ -1,3 +1,12 @@
+### !!! NOTE: For running the live hosted application, Firstly open the Backend link and wait for few seconds until the screen goes white. Once done, open the frontend link. Application screenshots are available in the documentaion. For running the app locally refer to the README.md file in Github or source code of the app. !!!
+
+Backend Link: https://vertexcollab.onrender.com
+
+Frontend Link: https://vertexcollab.vercel.app/
+
+Github Repository Link: https://github.com/Indianworldruler/vertexcollab.git
+
+
 # ⬡ VertexCollab — Enterprise SaaS Collaboration Platform
 
 > **DevOps Academic Project** — Phase 1: Application Development  
